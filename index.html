@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Jundokan Brasil | Karatê Goju-Ryu Tradicional</title>
+    <meta name="description" content="Jundokan Brasil - Ensino tradicional do Karatê Goju-Ryu, preservando a essência da arte marcial desenvolvida em Okinawa. A verdadeira casa de Eiichi Miyazato no Brasil.">
+    <meta name="keywords" content="karatê, goju-ryu, jundokan, artes marciais, okinawa, brasil">
+    <meta name="author" content="Jundokan Brasil">
+    <meta property="og:title" content="Jundokan Brasil | Karatê Goju-Ryu">
+    <meta property="og:description" content="Preservando a essência do Karatê Goju-Ryu desenvolvido em Okinawa.">
+    <meta property="og:type" content="website">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts Premium -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS para Mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- CSS Próprio -->
+    <link rel="stylesheet" href="/FrontEnd/css/style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor (Desktop only) -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- HEADER PREMIUM -->
+    <header id="mainHeader">
+        <div class="container header-flex">
+            <div class="logo" data-aos="fade-right" data-aos-duration="800">
+                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=531,fit=crop/A0xwbVP30nCDqgG1/photoroom-20241005_130722-YD065JbEvbH51MXM.png" 
+                     alt="Jundokan Brasil Logo" 
+                     class="logo-img"
+                     id="mainLogo">
+                <div class="logo-text">
+                    <span class="logo-title">Jundokan Brasil</span>
+                    <span class="logo-subtitle">Casa de Eiichi Miyazato</span>
+                </div>
+            </div>
+            
+            <div class="logo-spotlight" data-aos="fade-down" data-aos-duration="800">
+                <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,fit=crop/A0xwbVP30nCDqgG1/jundokanbrasil-A85wkbapZesW638q.png" 
+                     alt="Logo Destaque" 
+                     class="spotlight-img">
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#" data-page="home" class="active">Início</a>
+                <a href="#" data-page="blog">Blog</a>
+                <a href="#" data-page="eventos">Eventos</a>
+                <a href="#" data-page="contato">Contato</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon" style="display: none;"></i>
+                </button>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="star-rating-container">
+            <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="rating-text">Excelência em Karatê Goju-Ryu</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- WhatsApp Float Premium -->
+    <a href="https://wa.me/5527998114460?text=Olá%20Jundokan%20Brasil!%20Gostaria%20de%20mais%20informações%20sobre%20o%20Karatê%20Goju-Ryu" 
+       class="float-wpp" 
+       target="_blank" 
+       rel="noopener"
+       data-aos="fade-up"
+       data-aos-duration="600"
+       data-aos-delay="200">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Fale conosco</span>
+    </a>
+
+    <!-- Main Content -->
+    <main id="app-content">
+        <div id="dynamic-content">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Carregando...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Premium -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" data-aos="fade-up" data-aos-duration="600">
+                    <h3>Jundokan Brasil</h3>
+                    <p>Preservando a essência do Karatê Goju-Ryu desenvolvido em Okinawa, com tradição e excelência.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#" data-page="home">Início</a></li>
+                        <li><a href="#" data-page="blog">Blog</a></li>
+                        <li><a href="#" data-page="eventos">Eventos</a></li>
+                        <li><a href="#" data-page="contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-envelope"></i> chuseikan.jundokan.com.br</p>
+                    <p><i class="fab fa-whatsapp"></i> (27) 99811-4460</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Espirito santo - Linhares</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Jundokan Brasil - AKKKA | Karatê Goju-Ryu Tradicional | Desenvolvido por Gabriel Gonçalves Bôa</p>
+                <p class="onko">"On ko chi shin" - Estudar o passado para compreender o presente</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/FrontEnd/script/script.js"></script>
+</body>
+</html>
